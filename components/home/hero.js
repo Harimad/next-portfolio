@@ -6,9 +6,9 @@ export default function Home() {
     <>
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-          안녕하세요 이성현 입니다!
+          안녕하세요!
           <br className="hidden lg:inline-block" />
-          기록하는 프론트엔드 개발자 입니다🤗
+          기록하는 프론트엔드 개발자 이성현 입니다🤗
         </h1>
         <p className="mb-8 leading-relaxed">
           청춘 작고 희망의 길을 무엇을 뜨고, 이것이다. 생명을 따뜻한 같이 주며,
