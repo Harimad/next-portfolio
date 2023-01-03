@@ -13,10 +13,10 @@ export default function Projects({ projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-4xl font-bold sm:text-6xl">
+      <h3 className="mt-3 text-center text-4xl font-bold sm:text-5xl">
         총 프로젝트 :
         <span className="pl-4 text-blue-500">{projects.results.length}</span>
-      </h1>
+      </h3>
 
       <div className="grid grid-cols-1 gap-8 p-12 m-4 md:grid-cols-2">
         {projects.results.map(aProject => (
