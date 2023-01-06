@@ -7,15 +7,12 @@ export default function Home() {
     <>
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
-          {/* 안녕하세요! */}
           <br className="hidden lg:inline-block" />
-          {/* 기록하는 프론트엔드 개발자 이성현 입니다🤗 */}
           <Typewriter
             options={{
               strings: ["안녕하세요!"],
               autoStart: true,
-              loop: true,
-              pauseFor: 3000,
+              pauseFor: 300000,
             }}
           />
           <div className="mt-3 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
