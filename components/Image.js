@@ -7,7 +7,7 @@ export default function StandardImageList({ col, itemData }) {
   return (
     <>
       <br />
-      <ImageList cols={col} rowHeight={164}>
+      <ImageList cols={col} rowHeight={200}>
         {itemData.map(item => (
           <ImageListItem key={item.img}>
             <Image

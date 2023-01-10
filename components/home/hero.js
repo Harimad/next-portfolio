@@ -59,7 +59,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              이력서.pdf
+              이력서(pdf)
             </a>
           </button>
           <Introduction />
