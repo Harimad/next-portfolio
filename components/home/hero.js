@@ -1,6 +1,7 @@
 import Animation from "./animation";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
+// import("tailwindcss").Config;
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
             options={{
               strings: ["안녕하세요!"],
               autoStart: true,
-              pauseFor: 300000,
+              pauseFor: 600000,
             }}
           />
           <div className="mt-3 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -40,8 +41,23 @@ export default function Home() {
             <a className="btn-project mr-3">프로젝트</a>
           </Link>
           <button>
-            <a href="https://velog.io/@harimad" className="btn-project">
-              블로그
+            <a
+              href="https://velog.io/@harimad"
+              className="mr-3 btn-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              블로그(velog)
+            </a>
+          </button>
+          <button>
+            <a
+              href="https://blog.kakaocdn.net/dn/NZYb6/btrVPGl5tOQ/SdYflTzthhOp6AW0LL5bKK/tfile.pdf"
+              className="btn-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              이력서.pdf
             </a>
           </button>
         </div>

@@ -7,7 +7,13 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "velog-color": "#21c998",
+        "velog-darker": "#17906c",
+        "sky-blue": "#21a6c9",
+      },
+    },
   },
   plugins: [],
 };
