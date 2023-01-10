@@ -1,7 +1,7 @@
 import Animation from "./animation";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
-// import("tailwindcss").Config;
+import Introduction from "../Introduction";
 
 export default function Home() {
   return (
@@ -50,16 +50,19 @@ export default function Home() {
               블로그(velog)
             </a>
           </button>
+        </div>
+        <div className="mt-5 flex justify-center">
           <button>
             <a
               href="https://blog.kakaocdn.net/dn/NZYb6/btrVPGl5tOQ/SdYflTzthhOp6AW0LL5bKK/tfile.pdf"
-              className="btn-project"
+              className="btn-project mr-3"
               target="_blank"
               rel="noreferrer"
             >
               이력서.pdf
             </a>
           </button>
+          <Introduction />
         </div>
       </div>
       <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
