@@ -2,9 +2,11 @@ import Image from "next/legacy/image";
 // import Image from "next/image";
 
 export default function ProjectItem({ data }) {
+  // console.log("websiteURL:", data.properties.Website.url);
   const title = data.properties.Name.title[0].plain_text;
   const github = data.properties.Github.url;
   const notion = data.properties.Notion.url;
+  const website = data.properties.Website.url;
   // const youtube = data.properties.Youtube.url;
   const description = data.properties.Description.rich_text[0].plain_text;
   const imgSrc = data.cover.file?.url || data.cover.external.url;
@@ -56,10 +58,18 @@ export default function ProjectItem({ data }) {
       />
 
       <div className="p-4 flex flex-col">
-        <h1 className="text-2xl font-bold">{title}</h1>
+        <h1 className="text-2xl font-bold">
+          <a href={website} target="_blank" rel="noreferrer">
+            {title}
+          </a>
+        </h1>
         <h3 className="mt-4 text-xl">{description}</h3>
-        <a href={github}>GitHub 바로가기</a>
-        <a href={notion}>Notion 바로가기</a>
+        <a href={github} target="_blank" rel="noreferrer">
+          GitHub 바로가기
+        </a>
+        <a href={notion} target="_blank" rel="noreferrer">
+          Notion 바로가기
+        </a>
         {/* <a href={youtube}>유튜브 시연영상 보러가기</a> */}
         <p className="my-1 ">
           작업기간 : {start} ~ {end} ({calculatedPeriod(start, end)}일)
